@@ -1,5 +1,5 @@
-"# Car_selling_price_prediction_BiLSM-attention" 
-This project use numerical features to predic car selling price. The dataset contain 
+# Car_selling_price_prediction_BiLSM-attention
+This project use numerical features to predic car selling price. The dataset contain :
 year               
 make            
 model           
@@ -130,8 +130,11 @@ predictions = model.predict(X_test)
 
 # Evaluate model
 R²: 0.9673
+
 RMSE: 1363.7027
+
 MAPE: 13.2282%
+
 Correlation Coefficient (CC): 0.9835
 
 # Results
