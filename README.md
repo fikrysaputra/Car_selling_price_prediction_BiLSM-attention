@@ -15,7 +15,9 @@ interior
 seller           
 mmr               
 sellingprice    
-saledate   
+saledate
+
+![df_car](image/df_car.png)
 
 # EDA
 ```python
@@ -33,6 +35,7 @@ The dataset contain null data. Null data handling with median.
 ```python
 # Convert saledate into datetime format
 df_car['saledate'] = pd.to_datetime(df_car['saledate'], errors='coerce', utc=True)
+# Fill null data
 df_car.fillna(df_car.median(numeric_only=True), inplace=True)
 df_car['make'].fillna(df_car['make'].mode()[0], inplace=True)
 df_car['model'].fillna(df_car['model'].mode()[0], inplace=True)
@@ -67,8 +70,19 @@ for col in ['odometer', 'mmr', 'sellingprice']:
 ```
 
 # Plot
+![transmission](image/transmission.png)
+![SellingPricebyCondition](image/SellingPricebyCondition.png)
+![colordis](image/colordis.png)
+![dissell](image/dissell.png)
+![top5trim](image/top5trim.png)
+![topbody](image/topbody.png)
+![topcolor](image/topcolor.png)
+![topmake](image/topmake.png)
+![topstate](image/topstate.png)
+![careachstate](image/careachstate.png)
+![careachstate](image/careachstate.png)
+![yearstop](image/yearstop.png)
 
-ads
 
 # Preprocessing Data
 data split into Train, Test, and Validation with ratio 8:1:1
@@ -122,7 +136,7 @@ model.summary()
 ```
 
 Train loss and Val loss
-
+![loss](image/loss.png)
 # Predict the selling price
 ```python
 predictions = model.predict(X_test)
@@ -139,3 +153,9 @@ Correlation Coefficient (CC): 0.9835
 
 # Results
 Show only first 100 prediction
+![predict results](image/predict results.png)
+
+# Conclusion
+R² value indicates that the model explains approximately 96.73% of the variance in the selling price, suggesting excellent predictive accuracy. Root Mean Square Error is relatively low compared to the range of selling prices, indicating that the model's predictions are close to the actual values. With a Mean Absolute Percentage Error around 13%, the model's average error rate is acceptable but could be improved for more precise predictions. The high correlation coefficient demonstrates a strong linear relationship between predicted and actual selling prices, confirming the model's reliability. BiLSTM model with attention performs very well for predicting selling prices, capturing essential patterns in the dataset. The attention mechanism likely enhances the model’s ability to focus on relevant features, leading to higher accuracy in price predictions.
+
+
