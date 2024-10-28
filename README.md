@@ -98,6 +98,7 @@ Training sequences shape: (422412, 6), Target shape: (422412,)
 Testing sequences shape: (52802, 6), Target shape: (52802,)
 Validation sequences shape: (52801, 6), Target shape: (52801, 6)
 
+# Train Data
 ```python
 # Define Model
 def model_BiLSTM(input_shape):
