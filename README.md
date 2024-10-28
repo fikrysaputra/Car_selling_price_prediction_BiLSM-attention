@@ -1,4 +1,4 @@
-# Car_selling_price_prediction_BiLSM-attention
+# Car Selling Price Prediction BiLSM-attention
 This project use numerical features to predic car selling price. The dataset contain :
 year               
 make            
