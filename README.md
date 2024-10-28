@@ -74,12 +74,12 @@ for col in ['odometer', 'mmr', 'sellingprice']:
 ![SellingPricebyCondition](image/SellingPricebyCondition.png)
 ![colordis](image/colordis.png)
 ![dissell](image/dissell.png)
+![discondition](image/discondition.png)
 ![top5trim](image/top5trim.png)
 ![topbody](image/topbody.png)
 ![topcolor](image/topcolor.png)
 ![topmake](image/topmake.png)
 ![topstate](image/topstate.png)
-![careachstate](image/careachstate.png)
 ![careachstate](image/careachstate.png)
 ![yearstop](image/yearstop.png)
 
