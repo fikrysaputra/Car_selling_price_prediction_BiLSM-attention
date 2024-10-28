@@ -154,7 +154,7 @@ Correlation Coefficient (CC): 0.9835
 
 # Results
 Show only first 100 prediction
-![predict results](image/predict results.png)
+![predictresults](image/predictresults.png)
 
 # Conclusion
 R² value indicates that the model explains approximately 96.73% of the variance in the selling price, suggesting excellent predictive accuracy. Root Mean Square Error is relatively low compared to the range of selling prices, indicating that the model's predictions are close to the actual values. With a Mean Absolute Percentage Error around 13%, the model's average error rate is acceptable but could be improved for more precise predictions. The high correlation coefficient demonstrates a strong linear relationship between predicted and actual selling prices, confirming the model's reliability. BiLSTM model with attention performs very well for predicting selling prices, capturing essential patterns in the dataset. The attention mechanism likely enhances the model’s ability to focus on relevant features, leading to higher accuracy in price predictions.
